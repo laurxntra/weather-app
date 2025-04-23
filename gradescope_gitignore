@@ -1,0 +1,15 @@
+# Ignore by default
+*
+
+# Make sure we capture dependencies and other configuration
+!pubspec.lock
+!pubspec.yaml
+
+# Student code
+!lib/**
+
+# Custom images or other assets
+!assets/**
+
+# Custom tests
+!test/**
