@@ -8,7 +8,7 @@ class BigTemp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Text(
-        '$tempInFahrenheit°F',
+        '$tempInFahrenheit °F',
         style: const TextStyle(
           fontSize: 36,
           fontWeight: FontWeight.bold,
