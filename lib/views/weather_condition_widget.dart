@@ -8,8 +8,24 @@ class WeatherConditionWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final iconToShow = Icons.__________ // TODO (you): Choose an appropriate icon based on condition
-    final textToShow = // TODO (you): Generate appropriate text to show based on condition 
+    IconData iconToShow;
+    String textToShow;
+
+    switch (condition) {
+      case WeatherCondition.gloomy:
+        iconToShow = Icons.cloud;
+        textToShow = 'Gloomy';
+        break;
+      case WeatherCondition.rainy:
+        iconToShow = Icons.umbrella_outlined;
+        textToShow = 'Rainy';
+      case WeatherCondition.sunny:
+        iconToShow = Icons.sunny;
+        textToShow = 'Sunny';
+      case WeatherCondition.unknown:
+        iconToShow = Icons.question_mark;
+        textToShow = 'Unknown';
+    }
 
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,

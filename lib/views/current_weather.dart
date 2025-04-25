@@ -8,8 +8,8 @@ import 'weather_condition_widget.dart';
 class CurrentWeather extends StatelessWidget {
   const CurrentWeather({
     super.key,
-    this.tempInFahrenheit = 42,
-    this.condition = WeatherCondition.gloomy,
+    this.tempInFahrenheit = 62,
+    this.condition = WeatherCondition.rainy,
   });
 
   final WeatherCondition condition;
@@ -29,7 +29,7 @@ class CurrentWeather extends StatelessWidget {
                   padding: EdgeInsets.all(16.0),
                 ),
                 const SpaceNeedleInACircle(),
-                BigTemp(tempInFahrenheit),
+                BigTemp(tempInFahrenheit: tempInFahrenheit),
                 WeatherConditionWidget(condition),
               ],
             ),
@@ -39,6 +39,12 @@ class CurrentWeather extends StatelessWidget {
     );
   }
 
-  // TODO (you): Write this method
-  Color _backgroundColorForCondition(WeatherCondition condition) {}
+  Color _backgroundColorForCondition(WeatherCondition condition) {
+    return switch (condition) {
+      WeatherCondition.gloomy => Colors.grey,
+      WeatherCondition.rainy => Colors.blueGrey,
+      WeatherCondition.sunny => Colors.amber,
+      WeatherCondition.unknown => Colors.white,
+    };
+  }
 }
