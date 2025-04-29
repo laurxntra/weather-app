@@ -35,7 +35,7 @@ class WeatherProvider extends ChangeNotifier {
   // Parameters:
   // - newTempFahrenheit: The updated temperature in fahrenheit
   // - newCondition: The updated weather condition
-  updateWeather(int newTempFahrenheit, WeatherCondition newCondition) {
+  void updateWeather(int newTempFahrenheit, WeatherCondition newCondition) {
     // updates the temperature
     tempInFahrenheit = newTempFahrenheit;
     // updates the condition
