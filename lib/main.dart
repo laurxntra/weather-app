@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:weather/providers/weather_provider.dart';
 import './views/current_weather.dart';
 
 void main() {
@@ -15,9 +17,12 @@ class WeatherApp extends StatelessWidget {
   /// Returns: A MaterialApp widget that contains the Weather image, temperature, and condition
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(primaryColor: Colors.white),
-      home: CurrentWeather(),
+    return ChangeNotifierProvider(
+      create: (context) => WeatherProvider(),
+      child: MaterialApp(
+        theme: ThemeData(primaryColor: Colors.white),
+        home: const CurrentWeather(),
+      ),
     );
   }
 }

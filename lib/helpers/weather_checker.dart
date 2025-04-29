@@ -38,7 +38,8 @@ class WeatherChecker {
         }
       }
     } catch (_) {
-      // TODO(you): Find a way to have the UI let the user know that we haven't been able to update data successfully
+      // If weather can not be updated, an error message will be printed
+      print('Update weather failed');
     } finally {
       client?.close();
       client = null;
