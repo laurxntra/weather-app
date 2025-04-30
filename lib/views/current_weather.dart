@@ -64,9 +64,9 @@ class CurrentWeather extends StatelessWidget {
   // A color value representing the different types of weather condition
   Color _backgroundColorForCondition(WeatherCondition condition) {
     return switch (condition) {
-      WeatherCondition.gloomy => Colors.grey,
-      WeatherCondition.rainy => Colors.blueGrey,
-      WeatherCondition.sunny => Colors.amber,
+      WeatherCondition.gloomy => const Color.fromRGBO(214, 214, 214, 1.0),
+      WeatherCondition.rainy => const Color.fromRGBO(160, 196, 255, 10.0),
+      WeatherCondition.sunny => const Color.fromRGBO(255, 213, 79, 1.0),
       WeatherCondition.unknown => Colors.white,
     };
   }

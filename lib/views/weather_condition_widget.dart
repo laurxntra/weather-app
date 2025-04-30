@@ -57,7 +57,7 @@ class WeatherConditionWidget extends StatelessWidget {
           // displays text
           Text(
             textToShow,
-            style: TextStyle(fontSize: 24),
+            style: const TextStyle(fontSize: 24),
           ),
         ]
       ),

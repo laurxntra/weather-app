@@ -20,10 +20,10 @@ class BigTemp extends StatelessWidget {
       // Allows for visual text to not be spoken for screen readers -- only label is read
       excludeSemantics: true,
       child: Center(
-      child: Text(
-        // Displays the temperature as text
-        '$tempInFahrenheit °F',
-        style: const TextStyle(
+        child: Text(
+          // Displays the temperature as text
+          '$tempInFahrenheit °F',
+          style: const TextStyle(
           // text size is 36
           fontSize: 36,
           // text is bolded
