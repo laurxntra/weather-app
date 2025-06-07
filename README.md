@@ -42,7 +42,7 @@ lib/
 ## Getting Started
 1. **Clone the repo**
    ```bash
-   git clone TODO
+   git clone https://github.com/laurxntra/weather-app.git
    cd weather-app
 2. **Install dependencies**
    ```bash
