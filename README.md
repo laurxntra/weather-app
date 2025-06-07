@@ -13,7 +13,7 @@ The **Basic Weather App** is a Flutter application that shows the current weathe
 
 ## Screenshot
 
-<img src="assets/screenshots/home-page.png" alt="Weather App Home" width="50%"/>
+<img src="assets/screenshots/home-page.png" alt="Weather App Home" width="300"/>
 
 ## Technologies Used
 - **Flutter & Dart**
