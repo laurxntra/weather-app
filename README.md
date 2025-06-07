@@ -27,17 +27,16 @@ The **Basic Weather App** is a Flutter application that shows the current weathe
 ```text
 lib/
 ├── main.dart
-├── models/
-│   └── weather.dart
+├── weather_conditions.dart
+├── views/
+│   └── big_temp.dart
+│   └── current_weather.dart
+│   └── space_needle_in_a_circle.dart
+│   └── weather_condition_widget.dart
 ├── providers/
 │   └── weather_provider.dart
-├── screens/
-│   └── home_page.dart
-├── services/
-│   ├── weather_service.dart
-│   └── location_service.dart
-└── widgets/
-    └── weather_card.dart
+└── helpers/
+    └── weather_checker.dart
 ```
 ## Getting Started
 1. **Clone the repo**
