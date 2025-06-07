@@ -29,9 +29,9 @@ lib/
 ├── main.dart
 ├── weather_conditions.dart
 ├── views/
-│   └── big_temp.dart
-│   └── current_weather.dart
-│   └── space_needle_in_a_circle.dart
+│   ├── big_temp.dart
+│   ├── current_weather.dart
+│   ├── space_needle_in_a_circle.dart
 │   └── weather_condition_widget.dart
 ├── providers/
 │   └── weather_provider.dart
